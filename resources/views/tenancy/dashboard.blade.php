@@ -1,4 +1,4 @@
-@extends('layouts.admin-sidebar')
+@extends('layoutsTenant.admin-sidebar')
 @section('content')
 
 @endsection

@@ -332,7 +332,7 @@
                         <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Facturas : <b>$0</b></span></a>
                         <a class="dropdown-item" href="pages-profile-settings.html"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Configuración</span></a>
                         <a class="dropdown-item" href="#"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Bloquear pantalla</span></a>
-                        <form method="POST" action="{{ route('logout') }}">
+                        <form method="POST" action="{{ route('tenant.logout') }}">
                         @csrf
                             <a class="dropdown-item" href="#" onclick="event.preventDefault(); this.closest('form').submit();">
                                 <i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Cerrar Sección</span>

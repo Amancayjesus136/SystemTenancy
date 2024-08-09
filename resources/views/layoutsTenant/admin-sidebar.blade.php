@@ -23,9 +23,9 @@
 
     <body>
 
-        @include('layouts.menu-sidebar')
+        @include('layoutsTenant.menu-sidebar')
         @yield('content')
-        @include('layouts.footer')
+        @include('layoutsTenant.footer')
 
 
         @livewireScripts
