@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Http\Controllers\Income\IngresosController;
 use Illuminate\Support\Facades\Route;
 use Stancl\Tenancy\Middleware\InitializeTenancyByDomain;
 use Stancl\Tenancy\Middleware\PreventAccessFromCentralDomains;
@@ -31,6 +32,9 @@ Route::middleware([
         Route::get('dashboard', function () {
             return view('tenancy.dashboard');
         })->name('dashboard');
+
+        Route::resource('ingresos', IngresosController::class);
+
     });
 
     require __DIR__.'/tenancy_auth.php';

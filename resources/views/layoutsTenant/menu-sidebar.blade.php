@@ -411,6 +411,15 @@
                             </li>
                         </ul>
 
+                        <ul class="navbar-nav" id="navbar-nav">
+                            <li class="menu-title"><span>Module</span></li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="{{ route('ingresos.index') }}" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                                    <i class="bx bx-home"></i> <span data-key="t-dashboard">Ingresos</span>
+                                </a>
+                            </li>
+                        </ul>
+
 
                     </ul>
                 </div>

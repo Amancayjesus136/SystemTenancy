@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Income\IngresosController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TenantController;
 use Illuminate\Support\Facades\Route;
