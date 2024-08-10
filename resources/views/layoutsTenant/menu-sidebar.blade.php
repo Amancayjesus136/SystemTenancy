@@ -405,47 +405,13 @@
                         <ul class="navbar-nav" id="navbar-nav">
                             <li class="menu-title"><span>Menu</span></li>
                             <li class="nav-item">
-                                <a class="nav-link menu-link" href="{{ route('login') }}" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                                <a class="nav-link menu-link" href="{{ route('tenant.login') }}" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                                     <i class="bx bx-home"></i> <span data-key="t-dashboard">Dashboard</span>
                                 </a>
                             </li>
                         </ul>
 
-                        <li class="menu-title"><span>Gestión usuarios</span></li>
-                        <li class="nav-item">
-                            <li class="nav-item">
-                                <a class="nav-link menu-link" href="#" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                                    <i class="ri-survey-line"></i> <span data-key="t-dashboard">Empleados</span>
-                                </a>
-                            </li>
-                        </li>
 
-                        <li class="menu-title"><span>Gestión general</span></li>
-                        <li class="nav-item">
-                            {{-- <li class="nav-item">
-                                <a class="nav-link menu-link" href="#" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                                    <i class="ri-survey-line"></i> <span data-key="t-dashboard">Facturas</span>
-                                </a>
-                            </li> --}}
-
-                            <a class="nav-link menu-link" href="#sidebarProductos" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProductos">
-                                <i class="ri-settings-5-line"></i> <span>Configuraciones</span>
-                            </a>
-
-                            <div class="collapse menu-dropdown" id="sidebarProductos">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"> Nacionalidad </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"> Puestos </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"> Tipo de usuarios </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->

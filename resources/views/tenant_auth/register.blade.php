@@ -43,17 +43,19 @@
                             @enderror
                         </div>
 
-                        {{-- <select name="role_id" id="role_id" class="form-control" required hidden>
-                            @foreach ($roles as $role)
-                                <option value="{{ $role->id_role }}" @if ($loop->first) selected @endif>{{ $role->role }}</option>
-                            @endforeach
-                        </select> --}}
-
-                        <input type="number" class="form-control" name="status_user" value="1" hidden>
-
                         <div class="mb-3">
                             <label for="password_confirmation" class="form-label">Confirmar Contraseña</label>
                             <input id="password_confirmation" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="empresa" class="form-label">Empresa</label>
+                            <input id="empresa" type="text" class="form-control @error('empresa') is-invalid @enderror" name="empresa" value="{{ old('empresa') }}" placeholder="Ingresar empresa correspondiente" required autocomplete="empresa">
+                            @error('empresa')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
 
                         <div class="block mt-4">
